@@ -1,0 +1,19 @@
+{
+  "name": "mcclipface",
+  "displayName": "McClipFace",
+  "version": "4.0.2",
+  "description": "Free coupon and deals lookup for Claude. Connects to the public McClipFace MCP server, with no account or payments, and includes a skill for store and product coupon checks.",
+  "author": {
+    "name": "GetClippy LLC / Matt Lucero",
+    "email": "hello@mcclipface.com",
+    "url": "https://mcclipface.com"
+  },
+  "homepage": "https://mcclipface.com",
+  "keywords": [
+    "McClipFace",
+    "coupon",
+    "promo code",
+    "deals"
+  ],
+  "license": "MIT"
+}
