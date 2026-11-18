@@ -1,7 +1,5 @@
 # McClipFace
 
-**Draft package only. Do not submit or publish this folder until Matt approves it.**
-
 McClipFace is a free coupon and deals lookup for Claude, operated by GetClippy LLC. This plugin bundles a skill with a connection to the public McClipFace MCP server at https://mcclipface.com/mcp. There is no account, no API key, and no payment.
 
 ## Use it
@@ -19,6 +17,21 @@ Lookups send the store or product name, optional currency, the skill version, an
 Some shopping links are served as redirects on mcclipface.com under the `/go` path. Following one of those redirects can take the shopper to a retailer through a tracked affiliate link. This plugin does not itself open those redirects.
 
 Details: https://mcclipface.com/privacy and https://mcclipface.com/security
+
+## Data sent outside the declared connector
+
+Yes, one endpoint, listed here. When the McClipFace MCP connector isn't available, the skill falls back to one read-only HTTPS lookup:
+
+`GET https://mcclipface.com/api/coupons`
+
+It sends only these query parameters:
+
+- `merchant` (the store name or domain) or `product` (the product name), never both
+- `currency` (an ISO 4217 code, such as USD)
+- `client_skill_version` (the skill version, such as 4.0.3)
+- `client_install_id` (the random install UUID described above; left out if the install can't keep one)
+
+It sends no cart contents, prices, order details, account data or anything that identifies the shopper. The skill sends data to no other service.
 
 ## Affiliate disclosure
 

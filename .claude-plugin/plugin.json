@@ -2,13 +2,16 @@
   "name": "mcclipface",
   "displayName": "McClipFace",
   "version": "4.0.3",
-  "description": "Free coupon and deals lookup for Claude. Connects to the public McClipFace MCP server, with no account or payments, and includes a skill for store and product coupon checks.",
+  "description": "Free coupon and deals lookup for Claude. Connects to the public McClipFace MCP server, with no account or payments, and includes a skill for store and product coupon checks. Affiliate commissions are disclosed; there are no paid placements.",
   "author": {
     "name": "GetClippy LLC / Matt Lucero",
     "email": "hello@mcclipface.com",
     "url": "https://mcclipface.com"
   },
   "homepage": "https://mcclipface.com",
+  "repository": "https://github.com/velhetica/mcclipface-claude-plugin",
+  "documentationUrl": "https://mcclipface.com/install.md",
+  "supportUrl": "mailto:clippy@mcclipface.com",
   "keywords": [
     "McClipFace",
     "coupon",
