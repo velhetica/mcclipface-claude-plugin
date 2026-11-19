@@ -28,7 +28,7 @@ It sends only these query parameters:
 
 - `merchant` (the store name or domain) or `product` (the product name), never both
 - `currency` (an ISO 4217 code, such as USD)
-- `client_skill_version` (the skill version, such as 4.0.5)
+- `client_skill_version` (the skill version, such as 4.0.6)
 - `client_install_id` (the random install UUID described above; left out if the install can't keep one)
 
 It sends no cart contents, prices, order details, account data or anything that identifies the shopper. The skill sends data to no other service.
